@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.andrewsigalas.pocketpuppy.CreationActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="98dp"
+        android:text="Name"
+        android:textSize="27sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+    <EditText
+        android:id="@+id/editText_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="21sp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_alignTop="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+        android:layout_toEndOf="@+id/textView1" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Breed"
+        android:textSize="27dp"
+        android:layout_toStartOf="@+id/editText_name"
+        android:layout_toLeftOf="@+id/editText_name"
+        android:layout_alignTop="@+id/listViewBreeds" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Age(Years)"
+        android:textSize="27dp"
+        android:layout_below="@+id/editText_name"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignStart="@+id/textView1" />
+
+    <EditText
+        android:id="@+id/editText_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/editText_name"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_marginLeft="23dp"
+        android:layout_toEndOf="@+id/textView4"
+        android:layout_toRightOf="@+id/textView4"
+        android:ems="10"
+        android:inputType="text" />
+
+    <ListView
+        android:id="@+id/listViewBreeds"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/editText_age"
+        android:layout_alignRight="@+id/editText_age"
+        android:layout_alignEnd="@+id/editText_age"
+        android:layout_marginTop="47dp"
+        android:layout_alignLeft="@+id/editText_name"
+        android:layout_alignStart="@+id/editText_name" />
+
+    <Button
+        android:id="@+id/buttonCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:onClick="create"
+        android:text="Create Dog"
+        android:layout_below="@+id/listViewBreeds"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

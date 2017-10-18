@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Pocket Puppy</string>
+    <string name="golden_retriever">Golden Retriever</string>
+    <string name="maltese">Maltese</string>
+    <string name="boxer">Boxer</string>
+    <string name="york_terrier">Yorkshire Terrier</string>
+    <string name="german_shepherd">German Shepherd</string>
+    <string-array name="dog_breed_array">
+        <item>@string/golden_retriever</item>
+        <item>@string/maltese</item>
+        <item>@string/boxer</item>
+        <item>@string/york_terrier</item>
+        <item>@string/german_shepherd</item>
+    </string-array>
+
+    <string-array name="walk_options">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+    </string-array>
+</resources>
